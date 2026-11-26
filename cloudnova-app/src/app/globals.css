@@ -1,0 +1,45 @@
+@import "tailwindcss";
+:root {
+    --bg-main: #F6F7F9;
+    --bg-secondary: #F9FAFB;
+    --bg-card: #FFFFFF;
+    --primary: #F58220;
+    --primary-light: #FDEEE2;
+    --purple: #8B5CF6;
+    --text-main: #1F2937;
+    --text-muted: #6B7280;
+    --border: #E5E7EB;
+}
+
+@theme {
+    --color-bg-main: var(--bg-main);
+    --color-bg-secondary: var(--bg-secondary);
+    --color-bg-card: var(--bg-card);
+    --color-primary: var(--primary);
+    --color-primary-light: var(--primary-light);
+    --color-purple: var(--purple);
+    --color-text-main: var(--text-main);
+    --color-text-muted: var(--text-muted);
+    --color-border: var(--border);
+}
+
+body {
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+}
+
+@keyframes float {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.animate-floating {
+    animation: float 4s ease-in-out infinite;
+}
